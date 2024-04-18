@@ -22,7 +22,7 @@ database.connect();
 app.use(express.json());
 app.use(cookieParser());
 const corsOptions = {
-  origin: ["http://localhost:3000"],
+  origin: ["https://study-notion-client-omega.vercel.app"],
   credentials: true,
 };
 app.use(
