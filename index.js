@@ -21,12 +21,12 @@ database.connect();
 //middlewares
 app.use(express.json());
 app.use(cookieParser());
-const corsOptions = {
-  origin: ["https://study-notion-client-omega.vercel.app"],
-  credentials: true,
-};
+// const corsOptions = {
+//   origin: ["https://study-notion-client-omega.vercel.app"],
+//   credentials: true,
+// };
 app.use(
-	cors(corsOptions)
+	cors()
 )
 
 app.use(
